@@ -8,8 +8,8 @@
 <br>
 <p>Click the button to add your own user name: {{ userName }}</p>
 <button
-  (click)="onCreateUser()"
   [disabled]= "(userName.length === 0)"
->Add User</button>
+  (click)="userName = ''"
+>Reset User</button>
 <p>{{ userStatus }}</p>
 
